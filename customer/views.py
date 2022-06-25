@@ -6,3 +6,6 @@ def index(request):
 
 def order(request):
     return render(request, 'customer/order.html')
+
+def drink(request):
+    return render(request, 'customer/drink.html')
