@@ -1,0 +1,12 @@
+{% extends 'customer/base.html' %}
+
+{% block content %}
+<div class="container mb-5">
+    <div class="row justify-content-center mt-1">
+        <div class="card col-md-5 col-sm-12 p-5 text-center">
+            <h2>Welcome!</h2>
+            <a href="{% url 'customer:order' %}" class="btn btn-primary">Place Order</a>
+        </div>
+    </div>
+</div>
+{% endblock content %}
