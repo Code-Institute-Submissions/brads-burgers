@@ -1,5 +1,13 @@
 var bcart = document.querySelector('#bcart');
 var btotal = document.querySelector('#btotal');
 
-bcart.innerHTML = '<li>Burger 2.99</li>';
-btotal.innerHTML = 'Total: 2.99';
+function addBurger(bid) {
+    burgerId = '#bur' + bid;
+    var name = document.querySelector(burgerId).innerHTML;
+
+    burgerId = '#burger' + bid;
+    var price = document.querySelector(burgerId).innerHTML;
+
+    btotal.innerHTML = 'Total: € ' + total;
+    bcart.innerHTML += '<li>'+ name + ' ' + price +'</li>';
+}

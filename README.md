@@ -56,13 +56,23 @@ When the order is complete, the restaurant can mark the order as complete.
 
 ------
 ## Testing
+Testing was done through every step of the project. I did not do a final testing done due to not being able to complete the project on time
 
-
-### Bugs
-
+------
+## Bugs
+* Could not get the total cost to appear correctly in the order list
+## Fixed Bugs
+* script.js would not work. Line 2 was missing parenthesis
+* Could not get item name and price to display in order list. In burger.html, line 13, 14, had to change `class` to `id`
 
 ------
 ## Deployment
+This project was deployed using Heroku
+* Steps for deployment
+  * Create a Heroku app
+  * Change ***DEBUG*** in ***settings.py*** to ***False***
+  * Link the Heroku app to the repository
+  * Click on deploy
 
 
 ------
