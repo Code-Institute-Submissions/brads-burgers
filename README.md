@@ -33,10 +33,14 @@ When the order is complete, the restaurant can mark the order as complete.
 <img src="assets/images/Wireframe.png">
 
 ------
+* **Update:** Due to time constraint, I have removed the ***Meals*** section and will add to future features.
+* **Update:** Due to time constraint, I have removed the ability to create a burger. Instead I have added a ***Burger*** category. I will add the ability to create a burger to future features.
+
+------
 ## Features
 ### Existing Features
 * Customer can order their meal by selecting from a number of categories
-* Customer can customize their burger by selecting what they want on it from a number of sub-categories
+* ~~Customer can customize their burger by selecting what they want on it from a number of sub-categories~~
 * Customer can view what they have ordered with the price of each item and a total price before finishing their order
 * Customer will be given an order number after finishing their order
 * Restaurant can view what orders have been made along side the order number
@@ -47,6 +51,8 @@ When the order is complete, the restaurant can mark the order as complete.
 * Customer can register their details and order/pay online
 * Customer can have the option for home delivery
 * Restaurant can show what items are out of stock
+* Customer can customize their burger by selecting what they want on it from a number of sub-categories
+
 
 ------
 ## Testing

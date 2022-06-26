@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Drink
 
 def index(request):
     return render(request, 'customer/index.html')
@@ -8,7 +7,11 @@ def index(request):
 def order(request):
     return render(request, 'customer/order.html')
 
+def burger(request):
+    return render(request, 'customer/burger.html')
+
+def side(request):
+    return render(request, 'customer/side.html')
+
 def drink(request):
-    drinks = Drink.objects.all()
-    ctx = {'drinks': drinks}
-    return render(request, 'customer/drink.html', ctx)
+    return render(request, 'customer/drink.html')
