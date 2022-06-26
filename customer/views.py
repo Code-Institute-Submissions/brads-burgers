@@ -9,10 +9,16 @@ def order(request):
     return render(request, 'customer/order.html')
 
 def burger(request):
-    return render(request, 'customer/burger.html')
+    burgers = Burger.objects.all()
+    ctx = {'burgers': burgers}
+    return render(request, 'customer/burger.html', ctx)
 
 def side(request):
-    return render(request, 'customer/side.html')
+    sides = Side.objects.all()
+    ctx = {'sides': sides}
+    return render(request, 'customer/side.html', ctx)
 
 def drink(request):
-    return render(request, 'customer/drink.html')
+    drinks = Drink.objects.all()
+    ctx = {'drinks': drinks}
+    return render(request, 'customer/drink.html', ctx)
