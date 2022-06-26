@@ -1,5 +1,7 @@
 {% extends 'customer/base.html' %}
 
+{% load static %}
+
 {% block content %}
 <div class="container mb-5">
     <div class="row justify-content-center">
@@ -8,22 +10,23 @@
             {% for burger in burgers %}
             <img class="m-5" src="{{ burger.image }}">
             <div class="justify-content-center">
-                <h4>{{ burger.name }}</h4>
-                <h4>€ {{ burger.price }}</h4>
+                <h4 id="bur{{ burger.id }}">{{ burger.name }}</h4>
+                <h4 id="burger{{ burger.id }}">€ {{ burger.price }}</h4>
                 <button class="btn btn-warning m-5">Select</button>
             </div>
             {% endfor %}
         </div>
         <div class="card col-md-3 ml-3 bg-light">
             <h2>Order list</h2>
-            <ul></ul>
-            <h4>Total: € 0</h4>
+            <ul id="bcart"></ul>
+            <h4 id="btotal">Total: € 0</h4>
         </div>
     </div>
     <div class="row justify-content-center mt-1">
         <div class="col-md-5 col-sm-12 p-5 text-center">
-            <a href="{% url 'customer:order' %}" class="btn btn-primary col-md-8 p-3">Next</a>
+            <a href="{% url 'customer:order' %}" class="btn btn-primary col-md-8 p-3" onclick="addBurger(1)">Next</a>
         </div>
     </div>
 </div>
+<script src="{% static 'customer/js/order.js' %}"></script>
 {% endblock content %}

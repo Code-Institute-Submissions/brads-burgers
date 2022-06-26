@@ -8,8 +8,8 @@
             {% for drink in drinks %}
             <img class="m-5" src="{{ drink.image }}">
             <div class="justify-content-center">
-                <h4>{{ drink.name }}</h4>
-                <h4>€ {{ drink.price }}</h4>
+                <h4 id="dri{{ drink.id }}">{{ drink.name }}</h4>
+                <h4 id="drink{{ drink.id }}">€ {{ drink.price }}</h4>
                 <button class="btn btn-warning m-5">Select</button>
             </div>
             {% endfor %}

@@ -8,8 +8,8 @@
             {% for side in sides %}
             <img class="m-5" src="{{ side.image }}">
             <div class="justify-content-center">
-                <h4>{{ side.name }}</h4>
-                <h4>€ {{ side.price }}</h4>
+                <h4 id="sid{{ side.id }}">{{ side.name }}</h4>
+                <h4 id="side{{ side.id }}">€ {{ side.price }}</h4>
                 <button class="btn btn-warning m-5">Select</button>
             </div>
             {% endfor %}

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-{% load static %}
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BRAD'S BURGERS</title>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/minty/bootstrap.min.css">
+    {% load static %}
 </head>
 
 <body>
@@ -23,7 +22,7 @@
     <footer class="page-footer font-small bg-light fixed-bottom">
         <div class="text-center p-4">
             <a href="#" class="ml-3 text-dark">Restaurant Login</a>
-            <a href="#" class="ml-3 text-dark" id="cart">Order</a>
+            <a href="#" class="ml-3 text-dark">Order <span id="cart">0</span></a>
         </div>
     </footer>
 

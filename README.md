@@ -67,6 +67,7 @@ When the order is complete, the restaurant can mark the order as complete.
 
 ------
 ## Credits
-
+* Simen Daehlin (mentor) for help and advice
+* Code Institute for the deployment instructions
 
 ------
