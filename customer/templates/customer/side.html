@@ -1,7 +1,29 @@
 {% extends 'customer/base.html' %}
 
 {% block content %}
-
-<h1>Sides</h1>
-
+<div class="container mb-5">
+    <div class="row justify-content-center">
+        <div class="card col-md-5 col-sm-12 p-5 text-center">
+            <h2>Select Side</h2>
+            {% for side in sides %}
+            <img class="m-5" src="{{ side.image }}">
+            <div class="justify-content-center">
+                <h4>{{ side.name }}</h4>
+                <h4>€ {{ side.price }}</h4>
+                <button class="btn btn-warning m-5">Select</button>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="card col-md-3 ml-3 bg-light">
+            <h2>Order list</h2>
+            <ul></ul>
+            <h4>Total: € 0</h4>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-1">
+        <div class="col-md-5 col-sm-12 p-5 text-center">
+            <a href="{% url 'customer:order' %}" class="btn btn-primary col-md-8 p-3">Next</a>
+        </div>
+    </div>
+</div>
 {% endblock content %}
