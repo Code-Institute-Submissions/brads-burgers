@@ -8,6 +8,7 @@ function addBurger(bid) {
     burgerId = '#burger' + bid;
     var price = document.querySelector(burgerId).innerHTML;
 
+    total = Number(total) + Number(price);
     btotal.innerHTML = 'Total: € ' + total;
     bcart.innerHTML += '<li>'+ name + ' ' + price +'</li>';
 }
