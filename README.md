@@ -55,6 +55,14 @@ When the order is complete, the restaurant can mark the order as complete.
 
 
 ------
+
+<img src="assets/images/index.png"></img>
+<img src="assets/images/order.png"></img>
+<img src="assets/images/burger.png"></img>
+<img src="assets/images/salad.png"></img>
+<img src="assets/images/drink.png"></img>
+
+------
 ## Testing
 Testing was done through every step of the project. I did not do a final testing done due to not being able to complete the project on time
 
