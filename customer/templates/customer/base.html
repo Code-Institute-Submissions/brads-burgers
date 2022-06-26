@@ -13,13 +13,14 @@
 <body>
     <div class="container mb-5">
         <div class="row justify-content-center mt-5">
-            <div class="col-md-8 col-sm-12 p-4 text-center">
+            <div class="col-md-8 col-sm-12 p-5 text-center">
                 <h1>BRAD'S BURGERS</h1>
             </div>
         </div>
     </div>
     {% block content %}
     {% endblock content %}
+    {% include 'customer/footer.html' %}
 
     <!-- jQuery library -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
